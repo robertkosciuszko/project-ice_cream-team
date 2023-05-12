@@ -8,12 +8,10 @@
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /project-ice_cream-team/"
   },
-  
   "repository": {
     "type": "git",
     "url": "https://robertkosciuszko.github.io/project-ice_cream-team/"
   },
-  
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
