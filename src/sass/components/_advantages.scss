@@ -1,0 +1,147 @@
+.containeradvantages {
+  padding-bottom: 97px;
+  width: 100%;
+  background-color: $lightPink;
+}
+
+.advantagessearchengines {
+  display: none;
+}
+
+.advantageslist {
+  list-style: none;
+
+  &__element {
+    margin-bottom: 38px;
+    width: 100%;
+    max-width: 230px;
+  }
+
+  &__element--last {
+    margin-bottom: 0;
+  }
+
+  &__header {
+    font-family: 'Titan One', cursive;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-align: left;
+    text-transform: uppercase;
+    color: $red;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 0px;
+  }
+
+  &__text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: $black;
+  }
+
+  &__header--icon1::before {
+    content: '';
+    width: 33px;
+    height: 50px;
+    margin-bottom: 16px;
+    padding: 0px;
+    background-image: url('../images/advantages-icon1.svg');
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  &__header--icon2::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+    padding: 0px;
+    background-image: url('../images/advantages-icon2.svg');
+    display: block;
+  }
+
+  &__header--icon3::before {
+    content: '';
+    width: 44px;
+    height: 50px;
+    margin-bottom: 16px;
+    padding: 0px;
+    background-image: url('../images/advantages-icon3.svg');
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .containeradvantages {
+    padding-top: 40px;
+    padding-bottom: 140px;
+  }
+
+  .advantageslist {
+    display: flex;
+    justify-content: space-between;
+
+    &__element {
+      max-width: 180px;
+      margin-bottom: 0;
+    }
+
+    &__header {
+      font-size: 48px;
+      margin-bottom: 13px;
+    }
+
+    &__header--icon1::before {
+      margin-bottom: 36px;
+    }
+
+    &__header--icon2::before {
+      margin-bottom: 36px;
+    }
+
+    &__header--icon3::before {
+      margin-bottom: 36px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.74;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantageslist {
+    &__element {
+      max-width: 380px;
+    }
+
+    &__header {
+      font-size: 58px;
+      margin-bottom: 15px;
+    }
+
+    &__header--icon1::before {
+      margin-bottom: 40px;
+    }
+
+    &__header--icon2::before {
+      margin-bottom: 40px;
+    }
+
+    &__header--icon3::before {
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.02em;
+    }
+  }
+}

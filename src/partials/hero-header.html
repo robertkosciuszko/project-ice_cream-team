@@ -1,0 +1,140 @@
+<header class="header-wrapper">
+  <div class="container container__header">
+    <a class="header__logo" href="index.html">
+      <picture>
+        <source srcset="./images/logo-desktop.png" media="(min-width: 1280px)" />
+        <source srcset="./images/logo-desktop@2x.png 2x" media="(min-width: 1280px)" />
+        <source srcset="./images/logo-tablet.png" media="(min-width: 768px)" />
+        <source srcset="./images/logo-tablet@2x.png 2x" media="(min-width: 768px)" />
+        <source srcset="./images/logo-mobile.png" media="(max-width: 767px)" />
+        <source srcset="./images/logo-mobile@2x.png 2x" media="(max-width: 767px)" />
+        <img src="./images/logo-desktop.png" alt="ice cream" />
+      </picture>
+    </a>
+    <div class="header__tablet-menu">
+      <nav class="main-navigation">
+        <a href="./index.html" class="main-navigation__link">Home</a>
+        <a href="#about" class="main-navigation__link">About us</a>
+        <a href="#advantages" class="main-navigation__link">How it's made?</a>
+        <a href="#products" class="main-navigation__link">Our products</a>
+        <a href="#contacts" class="main-navigation__link main-navigation__link--last">Contact</a>
+      </nav>
+      <button
+        class="mobile__open-btn js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 1H20" stroke="#D41443" />
+          <path d="M0 7H20" stroke="#D41443" />
+          <path d="M0 13H20" stroke="#D41443" />
+        </svg>
+      </button>
+      <button class="header__btn" type="button" data-buy-modal-open>
+        Buy now
+        <svg class="header__btn-icon" width="10" height="10">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container relative">
+    <ul class="hero__ul">
+      <li>
+        <h1 class="hero__title">
+          ice cream <br />
+          made with
+          <span class="hero__title--accent">passion</span>
+        </h1>
+      </li>
+      <li class="hero__list-item">
+        <a href="#products" class="hero__btn hero__btn--dark">Products</a>
+        <a href="#advantages" class="hero__btn hero__btn--light">How it's made?</a>
+      </li>
+      <li class="hero__list-item--tablet">
+        <picture>
+          <source srcset="./images/milk-desktop.png" media="(min-width: 1280px)" />
+          <source srcset="./images/milk-desktop@2x.png 2x" media="(min-width: 1280px)" />
+          <source srcset="./images/milk-tablet.png" media="(min-width: 768px)" />
+          <source srcset="./images/milk-tablet@2x.png 2x" media="(min-width: 768px)" />
+          <img class="hero__milk" src="./images/milk-desktop.png" alt="milk" />
+        </picture>
+        <div class="hero__milk-neighbour">
+          <p class="hero__milk-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button class="hero__milk-btn" type="button">
+            <img class="hero__milk-btn-icon" src="./images/arrow-right3.svg" height="18" width="18" />
+          </button>
+        </div>
+      </li>
+    </ul>
+    <div class="hero__ellipse">
+      <div class="hero__ellipse-bg"></div>
+      <picture class="hero__ellipse-picture">
+        <source srcset="./images/ice-desktop.png" media="(min-width: 1280px)" />
+        <source srcset="./images/ice-desktop@2x.png 2x" media="(min-width: 1280px)" />
+        <source srcset="./images/ice-tablet.png" media="(min-width: 768px)" />
+        <source srcset="./images/ice-tablet@2x.png 2x" media="(min-width: 768px)" />
+        <source srcset="./images/ice-mobile.png" media="(max-width: 767px)" />
+        <source srcset="./images/ice-mobile@2x.png 2x" media="(max-width: 767px)" />
+        <img src="./images/ice-desktop.png" alt="ice cream" />
+      </picture>
+    </div>
+    <div class="hero__woman">
+      <picture>
+        <source srcset="./images/woman-desktop.png" media="(min-width: 1280px)" />
+        <source srcset="./images/woman-desktop@2x.png 2x" media="(min-width: 1280px)" />
+        <source srcset="./images/woman-tablet.png" media="(min-width: 768px)" />
+        <source srcset="./images/woman-tablet@2x.png 2x" media="(min-width: 768px)" />
+        <img
+          class="hero__woman-photo"
+          src="./images/woman-desktop.png"
+          alt="woman with ice cream"
+        />
+      </picture>
+    </div>
+    <ul class="hero__list-number-ul">
+      <li class="hero__list-number">
+        <p class="hero__list-number-title hero__list-number-title--first">16</p>
+        <p class="hero__list-number-dsc">cafes</p>
+      </li>
+      <li class="hero__list-number">
+        <p class="hero__list-number-title hero__list-number-title--last">23</p>
+        <p class="hero__list-number-dsc">food trucks</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="mobile-menu js-menu-container" id="mobile-menu">
+  <button class="mobile-menu__close-btn js-close-menu">
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M1.25928 1L14.7408 15" stroke="white" />
+      <path d="M1 14.7407L15 1.25924" stroke="white" />
+    </svg>
+  </button>
+  <button class="mobile-menu__btn" type="button" data-buy-modal-open>
+        Buy now
+        <svg class="mobile-menu__btn-icon" width="10" height="10">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+  </button>
+  <ul class="mobile-menu__link-list">
+    <li><a href="index.html" class="mobile-menu__link">Home</a></li>
+    <li><a href="#about" class="mobile-menu__link">About us</a></li>
+    <li><a href="#advantages" class="mobile-menu__link">How it's made?</a></li>
+    <li><a href="#products" class="mobile-menu__link">Our products</a></li>
+    <li><a href="#contacts" class="mobile-menu__link mobile-menu__link--last">Contact</a></li>
+  </ul>
+</div>

@@ -1,0 +1,29 @@
+.section-gallery {
+  width: 100%;
+  margin: 0;
+  background: linear-gradient(to bottom, $lightPink 64px, $white 64px);
+  padding: 0;
+}
+
+.gallery__container {
+  padding: 0;
+}
+
+.gallery__image {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .section-gallery {
+    background: linear-gradient(to bottom, $lightPink 102px, $white 102px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-gallery {
+    background: linear-gradient(to bottom, $lightPink 171px, $white 171px);
+  }
+}

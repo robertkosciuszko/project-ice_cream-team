@@ -1,0 +1,161 @@
+.customer-reviews {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 86px;
+  @media screen and (min-width: 768px) {
+    padding: 123px 0 132px;
+  }
+
+  &__image {
+    background-color: $white;
+    display: flex;
+
+    &-input {
+      margin: 0 auto;
+    }
+  }
+
+  &__two {
+    background-color: $bgGray;
+    max-width: 100%;
+    height: 308px;
+    margin: 30px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      height: 164px;
+    }
+    @media screen and (min-width: 1280px) {
+      height: 138px;
+      margin: 15px 0;
+    }
+
+    &-text {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 255%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 157px;
+      background: repeating-linear-gradient(#fafafa, #fafafa 28px, #e1e1e1 28px, #e1e1e1 30px);
+      z-index: 0;
+      position: relative;
+
+      @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 216%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: $black;
+        max-width: 460px;
+        max-height: 83px;
+        background: repeating-linear-gradient(#fafafa, #fafafa 26px, #e1e1e1 26px, #e1e1e1 28px);
+      }
+
+      @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.86;
+        max-width: 750px;
+        max-height: 52px;
+        background: repeating-linear-gradient(#fafafa, #fafafa 24px, #e1e1e1 24px, #e1e1e1 26px);
+      }
+    }
+
+    &-text::before {
+      z-index: -1;
+      color: #e1e1e1;
+      width: 54px;
+      height: 40px;
+      content: url('../images/cudzyslow.png');
+      position: absolute;
+      top: -17px;
+      left: 9px;
+
+      @media screen and (min-width: 768px) {
+        top: -23px;
+        left: -40px;
+      }
+      @media screen and (min-width: 1280px) {
+        top: -20px;
+        left: -38px;
+      }
+    }
+  }
+
+  &__interactive {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-elipse {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 10px;
+      color: $elipseRed;
+
+      &-items {
+        padding-left: 0px;
+        color: $elipseRed;
+        list-style: none;
+        text-decoration: none;
+      }
+
+      &-tytul {
+        margin-top: 18px;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.86;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $black;
+
+        @media screen and (min-width: 768px) {
+          margin-top: 15px;
+          font-size: 16px;
+        }
+
+        @media screen and (min-width: 1280px) {
+          margin-top: 13px;
+          align-items: center;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 1.86;
+          text-align: center;
+          letter-spacing: 0.02em;
+          color: $black;
+        }
+      }
+    }
+
+    &-elipse2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 10px;
+      color: $elipseRed;
+      list-style: none;
+
+      &-items2 {
+        display: flex;
+        padding-left: 0px;
+        text-decoration: none;
+        list-style: none;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,18 @@
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+
+// Style dla pliku z przykładem HTML fragmentu
+@import './utils/variables';
+@import './utils/container';
+@import './utils/globals';
+
+@import './components/hero-header';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer';
+@import './components/contacts';
+@import './components/footer';
